@@ -4,7 +4,7 @@ import { COLORS, TEXT } from '../../../constants/theme'
 import {NetworkImage,ReusableText,HeightSpacer} from '../../../components/index'
 import { useNavigation } from '@react-navigation/native'
 const Country = ({item}) => {
-  console.log(item.imageUrl);
+ 
 
   const navigation=useNavigation();
   return (
