@@ -4,11 +4,16 @@ import reusable from './reusable.style'
 import { COLORS, SIZES, TEXT } from '../../constants/theme'
 import {HeightSpacer, NetworkImage, Rating, ReusableText, WidthSpacer} from '../../components/index'
 
-const ReusableTile = (item,onPress) => {
+const ReusableTile = ({item,onPress}) => {
   return (
     <TouchableOpacity style={styles.container} onPress={onPress}>
       <View style={reusable.rowWithSpace('flex-start')}>
-        <NetworkImage source={item.imageUrl} width={80} height={80} radius={12}/>
+        <NetworkImage 
+        source={item.imageUrl}
+        width={80} 
+        height={80} 
+        radius={12}
+        />
         <WidthSpacer width={15}/>
 
         <View>

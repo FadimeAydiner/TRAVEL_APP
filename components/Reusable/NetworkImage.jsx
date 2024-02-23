@@ -2,7 +2,7 @@ import { StyleSheet,Image } from 'react-native'
 import React from 'react'
 
 
-const NetworkImage = (source,width,height,radius) => {
+const NetworkImage = ({source,width,height,radius}) => {
   return (
     <Image 
         source={{uri:source}}
