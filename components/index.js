@@ -10,6 +10,8 @@ import ReusableTile from "./Reusable/ReusableTile";
 import Rating from "./Reusable/Rating";
 import BestHotels from "./Home/BestHotels";
 import HotelCard from "./Tiles/Hotels/HotelCard";
+import DescriptionText from "./Reusable/DescriptionText";
+import PopularList from "./Country/PopularList";
 
 export{
    ReusableText,
@@ -22,5 +24,7 @@ export{
    ReusableTile,
    Rating,
    BestHotels,
-   HotelCard
+   HotelCard,
+   DescriptionText,
+   PopularList
 }
