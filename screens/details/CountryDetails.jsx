@@ -6,7 +6,7 @@ import { DescriptionText, HeightSpacer, NetworkImage, PopularList, ResuableBtn, 
 import AppBar from '../../components/Reusable/AppBar';
 import { COLORS, SIZES, TEXT } from '../../constants/theme';
 import reusable from '../../components/Reusable/reusable.style';
-import Feather from "@expo/vector-icons"
+import {Feather} from "@expo/vector-icons"
 
 const CountryDetails = ({navigation}) => {
     const route=useRoute();
@@ -88,7 +88,13 @@ const CountryDetails = ({navigation}) => {
           size={20}
           />
          </TouchableOpacity>
-         <ResuableBtn
+         
+            </View>
+            <HeightSpacer height={20}/>
+            <PopularList
+          data={country.popular}
+          />
+          <ResuableBtn
                 onPress={()=>navigation.navigate('HotelSeacrh')}
                 btnText={"Find Best Hotels"}
                 width={SIZES.width-40}
@@ -99,13 +105,6 @@ const CountryDetails = ({navigation}) => {
           
             />
         
-            </View>
-            <HeightSpacer height={20}/>
-            <PopularList
-          data={country.popular}
-          
-
-         />
          <HeightSpacer height={50}/>
           </View>
         </View>

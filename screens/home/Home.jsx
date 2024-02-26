@@ -38,8 +38,10 @@ const Home = ({navigation}) => {
                 color={COLORS.black}
          />
          <Places/>
+
          <HeightSpacer height={15}/>
-          <Recommendations/>
+        <Recommendations/>
+        
          <HeightSpacer height={30}/>
          <BestHotels/>
 
