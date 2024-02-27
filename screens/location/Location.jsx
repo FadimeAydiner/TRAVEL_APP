@@ -10,6 +10,7 @@ const Location = () => {
     longitudeDelta:0.01,
     title:"My Location"
   }
+  
   return (
   <MapView initialRegion={coordinates} style={styles.mapStyle}>
     <Marker coordinate={coordinates} title={coordinates.title}/>
