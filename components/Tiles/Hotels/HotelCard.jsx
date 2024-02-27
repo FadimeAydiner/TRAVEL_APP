@@ -47,7 +47,7 @@ export default HotelCard
 const styles = StyleSheet.create({
     card:(margin)=>({
         width:SIZES.width/2.2,
-        height:250,
+        height:"100%",
         borderRadius:16,
         backgroundColor:COLORS.lightWhite,
         marginRight:margin

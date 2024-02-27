@@ -11,6 +11,7 @@ import HotelDetails from "./details/HotelDetails";
 import HotelList from "./details/HotelList";
 import HotelSearch from "./search/HotelSearch";
 import HotelMap from "../components/Hotel/HotelMap";
+import SelectRoom from "./details/SelectRoom";
 export{
     Onboarding,
     Home,
@@ -24,5 +25,6 @@ export{
     HotelDetails,
     HotelList,
     HotelSearch,
-    HotelMap
+    HotelMap,
+    SelectRoom
 }

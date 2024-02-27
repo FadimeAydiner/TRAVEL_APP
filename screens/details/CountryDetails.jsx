@@ -95,7 +95,7 @@ const CountryDetails = ({navigation}) => {
           data={country.popular}
           />
           <ResuableBtn
-                onPress={()=>navigation.navigate('HotelSeacrh')}
+                onPress={()=>navigation.navigate('HotelSearch',item._id)}
                 btnText={"Find Best Hotels"}
                 width={SIZES.width-40}
                 backgroundColor={COLORS.green}

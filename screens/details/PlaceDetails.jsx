@@ -12,6 +12,7 @@ import {Feather} from "@expo/vector-icons"
 const PlaceDetails = ({navigation}) => {
     const route=useRoute();
     const id=route.params;
+    
     const places= {
       "_id": "64d062a3de20d7c932f1f70a",
       "country_id": "64c62bfc65af9f8c969a8d04",
@@ -101,7 +102,7 @@ const PlaceDetails = ({navigation}) => {
 
        />
        <ResuableBtn
-              onPress={()=>navigation.navigate('HotelSeacrh')}
+              onPress={()=>navigation.navigate('HotelSearch')}
               btnText={"Find Best Hotels"}
               width={SIZES.width-40}
               backgroundColor={COLORS.green}

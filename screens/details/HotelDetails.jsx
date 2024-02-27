@@ -3,7 +3,7 @@ import React from 'react'
 import AppBar from '../../components/Reusable/AppBar'
 import { COLORS, SIZES } from '../../constants/theme'
 import styles from './hotelDetails.style'
-import { DescriptionText, HeightSpacer, NetworkImage, ReusableText, ReviewsList } from '../../components'
+import { DescriptionText, HeightSpacer, NetworkImage, ResuableBtn, ReusableText, ReviewsList, WidthSpacer } from '../../components'
 import reusable from '../../components/Reusable/reusable.style'
 import {Rating} from 'react-native-stock-star-rating'
 import HotelMap from '../../components/Hotel/HotelMap'
@@ -149,9 +149,38 @@ let coordinates={
           <Feather name='list' size={20}/>
         </TouchableOpacity>
       </View>
-
+      <HeightSpacer height={10}/>
       <ReviewsList reviews={hotel.reviews}/>
+      
     </View>
+    <View style={[reusable.rowWithSpace('space-between'),styles.bottom]}>
+      <View>
+      <ReusableText
+                text={`\$ ${hotel.price}`}
+                family={"medium"}
+                size={SIZES.large}
+                color={COLORS.black}
+        />
+        <HeightSpacer height={5}/>
+        <ReusableText
+                text={"Jan 01 - Dec 25"}
+                family={"medium"}
+                size={SIZES.medium}
+                color={COLORS.gray}
+        />
+        </View>
+        <ResuableBtn
+              onPress={()=>navigation.navigate('SelectRoom')}
+              btnText={"Select Room"}
+              width={(SIZES.width-50)/2.2}
+              backgroundColor={COLORS.green}
+              borderColor={COLORS.green}
+              borderWidth={0}
+              textColor={COLORS.white}
+        
+          />
+
+      </View>
 
 
     </View>
