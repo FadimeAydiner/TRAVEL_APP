@@ -1,10 +1,10 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { COLORS, SIZES } from '../../constants/theme'
-import { HeightSpacer, ReusableText } from '../../components'
+import { HeightSpacer, ReusableText, SettingsTile } from '../../components'
 import AppBar from '../../components/Reusable/AppBar'
 
-const Settings = () => {
+const Settings = ({navigation}) => {
   return (
     <View style={{backgroundColor:COLORS.lightWhite,flex:1}}>
         <View style={{height:120}}>
@@ -20,17 +20,30 @@ const Settings = () => {
         <ReusableText
               text={"Account Settings"}
               family={"regular"}
-              size={SIZES.xLarge-5}
+              size={SIZES.xLarge}
               color={COLORS.black}
        />
        <HeightSpacer height={10}/>
+       <SettingsTile title={'Language'}/>
+       <HeightSpacer height={3}/>
+       <SettingsTile title={"Country"} title1={"USA"} />
+       <HeightSpacer height={3}/>
+       <SettingsTile title={"Currency"} title1={"USD"} />
+             
+       <HeightSpacer height={40}/>
        <ReusableText
               text={"Support"}
               family={"regular"}
-              size={SIZES.xLarge-5}
+              size={SIZES.xLarge}
               color={COLORS.black}
        />
+      
+
        <HeightSpacer height={10}/>
+       <SettingsTile title={'Get Help'} title1={""}/>
+       <HeightSpacer height={3}/>
+       <SettingsTile title={"Give a feedback"} title1={""} />
+       <HeightSpacer height={40}/>
        <ReusableText
               text={"Legal"}
               family={"regular"}
@@ -38,6 +51,9 @@ const Settings = () => {
               color={COLORS.black}
        />
        <HeightSpacer height={10}/>
+       <SettingsTile title={'Terms of Service'} title1={""}/>
+       <HeightSpacer height={3}/>
+       <SettingsTile title={"Privacy Policy"} title1={""} />
         </View>  
     </View>
   )

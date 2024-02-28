@@ -17,6 +17,8 @@ import TopInfo from "./top/TopInfo";
 import TopTrips from "./top/TopTrips";
 import Payments from "./profile/Payments";
 import Settings from "./settings/Settings";
+import Success from "./bookings/Success";
+import Failed from "./bookings/Failed";
 export{
     Onboarding,
     Home,
@@ -36,6 +38,8 @@ export{
     TopInfo,
     TopTrips,
     Payments,
-    Settings
+    Settings,
+    Success,
+    Failed
 
 }
