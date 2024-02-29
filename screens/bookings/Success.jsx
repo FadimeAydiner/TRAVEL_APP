@@ -3,7 +3,7 @@ import React from 'react'
 import { AssetImage, HeightSpacer, ResuableBtn, ReusableText, ReusableTile } from '../../components'
 import { COLORS, SIZES, TEXT } from '../../constants/theme'
 
-const Success = () => {
+const Success = ({navigation}) => {
     const hotel= {
         "_id": "64c675183cfa5e847bcd5433",
         "country_id": "64c62bfc65af9f8c969a8d04",

@@ -19,6 +19,8 @@ import Payments from "./profile/Payments";
 import Settings from "./settings/Settings";
 import Success from "./bookings/Success";
 import Failed from "./bookings/Failed";
+import Registration from "./authentication/Registration";
+import Signin from "./authentication/Signin";
 export{
     Onboarding,
     Home,
@@ -40,6 +42,8 @@ export{
     Payments,
     Settings,
     Success,
-    Failed
+    Failed,
+    Registration,
+    Signin
 
 }
