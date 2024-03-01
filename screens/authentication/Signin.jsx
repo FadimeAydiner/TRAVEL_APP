@@ -27,7 +27,9 @@ const Signin = () => {
       <Formik
       initialValues={{email:'',password:''}}
       validationSchema={validationSchema}
-      onSubmit={(value)=>{}}
+      onSubmit={(value)=>{
+        
+      }}
       
       >
         {({
@@ -107,7 +109,7 @@ const Signin = () => {
           </View>
           <HeightSpacer height={20}/>
           <ResuableBtn
-              onPress={()=>{}}
+              onPress={()=>{handleSubmit}}
               btnText={"Sign In"}
               width={SIZES.width-40}
               backgroundColor={COLORS.green}

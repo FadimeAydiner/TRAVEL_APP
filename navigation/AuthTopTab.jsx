@@ -10,22 +10,22 @@ const AuthTopTab = () => {
     const Tab=createMaterialTopTabNavigator();
   return (
     <View style={{flex:1,backgroundColor:COLORS.lightWhite}}>
-      <ScrollView style={{flex:1,backgroundColor:COLORS.lightWhite}}>
+      <View style={{flex:1,backgroundColor:COLORS.lightWhite}}>
         <HeightSpacer height={50}/>
         <AssetImage 
         data={require('../assets/images/bg1.png')}
         mode={'contain'}
-        height={250}
+        height={150}
         width={'100%'}/>
 
-       
+      
         <Tab.Navigator>
         <Tab.Screen name='Signin' component={Signin}/>
         <Tab.Screen name='Registration' component={Registration}/>
       </Tab.Navigator>
-        
       
-      </ScrollView>
+      
+      </View>
     </View>
   )
 }

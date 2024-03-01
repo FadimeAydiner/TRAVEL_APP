@@ -7,7 +7,7 @@ const ResuableBtn = ({onPress,btnText,textColor,width,backgroundColor,borderWidt
     <TouchableOpacity
         onPress={onPress} style={styles.btnStyle(width,backgroundColor,borderWidth,borderColor)}
     >
-        <Text style={styles.btnText()}>{btnText}</Text>
+        <Text style={styles.btnText(textColor)}>{btnText}</Text>
     </TouchableOpacity>
   )
 }
